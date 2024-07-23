@@ -261,6 +261,27 @@ body, html {
 }
 
 
+.number{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+text-align: center;
+margin: 0px auto;
+  background-color: black !important;
+  padding: 10px 20px;
+  width: fit-content !important;
+  border-radius: 10px;
+}
+.number li{
+  list-style: none;
+}
+.number li .call{
+  text-decoration: none;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 /* responsive */
 @media (max-width: 900px){
