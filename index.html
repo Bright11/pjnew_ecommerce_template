@@ -49,8 +49,9 @@
            </li>
            <li class="hurburgar" onclick="toggleNav()"><button class="open_nav_btn"><i class="fa fa-bars" style="font-size:36px"></i></button></li>
         </ul>
+       
         <ul class="number">
-            <li><a  href="tel:+233557548921">+233557548921</a></li>
+            <li><a class="call"  href="tel:+233557548921"><i class="fa fa-phone" style="font-size:24px"></i>+233557548921</a></li>
         </ul>
         <!-- searchbar and catcount -->
         <ul class="search_cart">
@@ -270,16 +271,21 @@
       text-align: center;
       margin: 0px auto;
         background-color: black !important;
-        padding: 10px;
+        padding: 10px 20px;
         width: fit-content !important;
+        border-radius: 10px;
     }
     .number li{
         list-style: none;
     }
-    .number li a{
+    .number li .call{
         text-decoration: none;
         color: white !important;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
+    
 </style>
        
     </section>
