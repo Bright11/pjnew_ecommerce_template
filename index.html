@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/translator.css">
+    <link rel="stylesheet" href="css/translator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/homepagestyle.css">
+
+<link rel="stylesheet" href="js/owl/owl.carousel.min.css">
+<link rel="stylesheet" href="js/owl/owl.theme.default.css">
+
+<link rel="stylesheet" href="css/slider.css">
+<link rel="stylesheet" href="css/details_page.css">
+<link rel="stylesheet" href="css/footer.css">
+
+</head>
+<body>
+    <!-- navigation -->
+     <nav class="topnavbar">
+        <ul class="ul_top_nav">
+            <li class="logo_li"><a href="#">
+                <img src="logo/pjlogo.jpeg" alt="logo">
+            </a>
+        </li>
+          
+                <ul class="ul_top_nav_link" id="ul_top_nav_link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">login</a></li>
+                    <li><a href="">register</a></li>
+
+                    
+                </ul>
+            </li>
+           <li >
+            <div id="google_translate_element"></div>
+           </li>
+           <li class="hurburgar" onclick="toggleNav()"><button class="open_nav_btn"><i class="fa fa-bars" style="font-size:36px"></i></button></li>
+        </ul>
+        <!-- searchbar and catcount -->
+        <ul class="search_cart">
+            <button class="category_humburgar" onclick="hidecategory()">
+              <p id="category_icon_nav"> <i class="fa fa-bars" style="font-size:36px"></i></p>
+                <!-- <i class="fa fa-times"></i> -->
+              <h4 class="navcatgory_name">Categories</h4>
+            </button>
+           <ul class="open_earch_mobile" onclick="openSearch()"> <button class="mobile_open_icon">
+           
+            <i class="fa fa-search"></i>
+        </button></ul>
+            <ul class="search_bar">
+                <form action="" class="search_form">
+                   
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </ul>
+            <ul class="count_cart">
+                <li class="cart_count">
+                    <a href="#"><i class="fa fa-heart"></i>(0)</a>
+                </li>
+                <li class="cart_count cart_drop_container">
+                    <a href="#"><i class="fa fa-shopping-cart"></i>(0)</a>
+                    <!-- cart dropdown -->
+                    <ul class="cart_dropdown">
+                        <div class="cart_drop_content">
+                            <div class="drop_cart_items">
+                                <div class="cart_image">
+                                    <img src="images/a1.png" alt=""/>
+                                </div>
+                                <div class="cart_drop_info">
+                                    <h1>Productname</h1>
+                                    <div class="price_qty">
+                                        <form action="" class="update_qty_form">
+                                            <input type="text">
+                                            <p>$100</p>
+                                        </form>
+                                    </div>
+                                   <div class="cart_total_price">
+                                    <p>1300</p>
+                                   </div>
+                                    <div class="cart_remove_or_update">
+                                        <button>Remove</button>
+                                        <button>Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="drop_cart_items">
+                                <div class="cart_image">
+                                    <img src="images/a1.png" alt=""/>
+                                </div>
+                                <div class="cart_drop_info">
+                                    <h1>Productname</h1>
+                                    <div class="price_qty">
+                                        <form action="" class="update_qty_form">
+                                            <input type="text">
+                                            <p>$100</p>
+                                        </form>
+                                    </div>
+                                   <div class="cart_total_price">
+                                    <p>1300</p>
+                                   </div>
+                                    <div class="cart_remove_or_update">
+                                        <button>Remove</button>
+                                        <button>Update</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="drop_checkout">
+                                <div class="cart_drop_total">
+                                    <h1>Total</h1>
+                                    <p>$1300</p>
+                            
+                            </div>
+                            <div class="drop_checkout_btn">
+                                <a href="#">Checkout</a>
+                            </div>
+                            </div>
+                        </ul>
+                    
+                    <!-- the end of it's dropdown -->
+
+                </li>
+                <!-- <li class="cat_count">
+                    <a href="#"><i class="fa fa-list"></i>$(10)</a>
+                </li> -->
+            </ul>
+        </ul>
+        <!--  -->
+    </nav>
+<div class="spacer"></div>
+   
+    <!-- top slider and category -->
+
+    <section class="bannar_section">
+        <div class="bannar_container" style="background-image: url('images/pjbg.jpeg');">
+<!-- category -->
+<ul class="category_sidebar category_sidebar_settings">
+    <li><a href="#">All</a></li>
+    <li><a href="#">Electronics</a></li>
+    <li><a href="#">Clothing</a></li>
+    <li><a href="#">Home & Garden</a></li>
+    <li><a href="#">Sports & Outdoors</a></li>
+    <li><a href="#">Beauty & Health</a></li>
+    <li><a href="#">Kids & Baby</a></li>
+    <li><a href="#">Toys & Gifts</a></li>
+    <li><a href="#">Books & Magazines</a></li>
+    <li><a href="#">Office & Stationery</a></li>
+</ul>
+
+<!-- the end -->
+            <div class="owl-carousel mytopslider">
+                <div class="product_item_holder">
+                    <a href="details.html">
+                        <div class="proimage">
+                            <img src="images/pr5.png" alt="">
+                        </div>
+                        <div class="product_name_div">
+                            <h1>Product Name</h1>
+                            <div class="product_price">
+                                
+                                <p><strike>$10</strike></p>
+                                </div>
+                                </div>
+                                <div class="product_buttons">
+                                   <div class="addtocartdiv"> <a href="">Add to Cart
+                                    <i class="fa fa-shopping-cart"></i>
+                                   </a></div>
+                                      <div> <p>$120.00</p></div>
+                                    </div>
+            
+                                    <div class="pro_icons_position">
+                                     
+                                       <div><a href=""><i class="fa fa-heart"></i></a></div>
+                                       <div><a href=""><i class="fa fa-eye"></i></a></div>
+                                    </div>
+        
+                                    <div class="pro_discount">
+                                        <p>20% off</p>
+                                    </div>
+                    </a>
+                    
+                </div>
+                <div class="product_item_holder">
+                    <a href="details.html">
+                        <div class="proimage">
+                            <img src="images/pr5.png" alt="">
+                        </div>
+                        <div class="product_name_div">
+                            <h1>Product Name</h1>
+                            <div class="product_price">
+                                
+                                <p><strike>$10</strike></p>
+                                </div>
+                                </div>
+                                <div class="product_buttons">
+                                   <div class="addtocartdiv"> <a href="">Add to Cart
+                                    <i class="fa fa-shopping-cart"></i>
+                                   </a></div>
+                                      <div> <p>$120.00</p></div>
+                                    </div>
+            
+                                    <div class="pro_icons_position">
+                                     
+                                       <div><a href=""><i class="fa fa-heart"></i></a></div>
+                                       <div><a href=""><i class="fa fa-eye"></i></a></div>
+                                    </div>
+        
+                                    <div class="pro_discount">
+                                        <p>20% off</p>
+                                    </div>
+                    </a>
+                    
+                </div>
+                <div class="product_item_holder">
+                    <a href="details.html">
+                        <div class="proimage">
+                            <img src="images/pr5.png" alt="">
+                        </div>
+                        <div class="product_name_div">
+                            <h1>Product Name</h1>
+                            <div class="product_price">
+                                
+                                <p><strike>$10</strike></p>
+                                </div>
+                                </div>
+                                <div class="product_buttons">
+                                   <div class="addtocartdiv"> <a href="">Add to Cart
+                                    <i class="fa fa-shopping-cart"></i>
+                                   </a></div>
+                                      <div> <p>$120.00</p></div>
+                                    </div>
+            
+                                    <div class="pro_icons_position">
+                                     
+                                       <div><a href=""><i class="fa fa-heart"></i></a></div>
+                                       <div><a href=""><i class="fa fa-eye"></i></a></div>
+                                    </div>
+        
+                                    <div class="pro_discount">
+                                        <p>20% off</p>
+                                    </div>
+                    </a>
+                    
+                </div>
+        
+              </div>
+        </div>
+    </section>
+<!-- end of slider section -->
+
+    <!-- product section -->
+<section class="product_section">
+        <div class="pro_category_links">
+            <div> <a href="#">Electronics</a></div>
+            
+           <div> <a href="">View all</a></div>
+    
+    </div>
+    <div class="product_container">
+        <div class="product_item_holder">
+            <a href="details.html">
+                <div class="proimage">
+                    <img src="images/pr5.png" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+        <div class="product_item_holder">
+            <a href="">
+                <div class="proimage">
+                    <img src="images/pr5.png" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+
+        <div class="product_item_holder">
+            <a href="">
+                <div class="proimage">
+                    <img src="images/pr5.png" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+
+        <div class="product_item_holder">
+            <a href="">
+                <div class="proimage">
+                    <img src="images/computer.webp" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+
+        <div class="product_item_holder">
+            <a href="">
+                <div class="proimage">
+                    <img src="images/1.jpg" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+
+        <div class="product_item_holder">
+            <a href="">
+                <div class="proimage">
+                    <img src="images/pr5.png" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+
+        <div class="product_item_holder">
+            <a href="">
+                <div class="proimage">
+                    <img src="images/pr12.png" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+
+        <div class="product_item_holder">
+            <a href="">
+                <div class="proimage">
+                    <img src="images/pr10.png" alt="">
+                </div>
+                <div class="product_name_div">
+                    <h1>Product Name</h1>
+                    <p>Lorem ipsum dolor sit</p>
+                    <div class="product_price">
+                        
+                        <p><strike>$10</strike></p>
+                        </div>
+                        </div>
+                        <div class="product_buttons">
+                           <div class="addtocartdiv"> <a href="">Add to Cart
+                            <i class="fa fa-shopping-cart"></i>
+                           </a></div>
+                              <div> <p>$120.00</p></div>
+                            </div>
+    
+                            <div class="pro_icons_position">
+                             
+                               <div><a href=""><i class="fa fa-heart"></i></a></div>
+                               <div><a href=""><i class="fa fa-eye"></i></a></div>
+                            </div>
+
+                            <div class="pro_discount">
+                                <p>20% off</p>
+                            </div>
+            </a>
+            
+        </div>
+    </div>
+</section>
+    <!--  -->
+
+    <!-- footer -->
+
+    <section class="footer-section">
+        <footer class="footer">
+            <div class="newsletter">
+        
+                <div class="newsletter_note">
+                    <div class="newsletter_title">
+                        <h1>Newsletter</h1>
+                        <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+                    </div>
+                    <form action="" class="newsletter_form">
+                        <div class="newsletter_input">
+                            <input type="text" placeholder="Enter your email">
+                        </div>
+                        <div class="newsletter_button">
+                            <button><i class="fa fa-send" style="font-size:24px"></i></button>
+                        </div>
+                    </form>
+                    <div class="social_media">
+                        <div class="social_media_icons">
+                            <a href="#"><i class="fa fa-facebook-f" style="font-size:36px"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                            <a href="#"><i class="fa fa-twitter-square" style="font-size:36px"></i></a>
+                            <a href="#"><i class="fa fa-whatsapp" style="font-size:36px"></i></a>
+                            <a href=""><i class="fa fa-instagram" style="font-size:36px"></i></a>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="footer_links">
+                <div class="logo_footer">
+                    <img src="logo/logo.jpeg" alt="Logo">
+                    <h1>Bright C Web Developer</h1>
+        
+                </div>
+                <div class="useful_links">
+                    <div class="useful_links_title">
+                        <h1>Useful Links</h1>
+                    </div>
+                       <ul class="footer_ul">
+                         <li><a href="#">Home</a></li>
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">Services</a></li>
+                         <li><a href="#">Contact</a></li>
+                         <li><a href="#">Blog</a></li>
+                         <li><a href="#">Testimonials</a></li>
+                        
+                       </ul>
+                </div>
+                <div class="useful_links">
+                    <div class="useful_links_title">
+                        <h1>Useful Links</h1>
+                    </div>
+                    <ul class="footer_ul">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="contact_footer">
+                    <div class="pox_address">
+                        <p>NO 723 Accra Kneshie Road</p>
+                        <p>Accra, Ghana</p>
+                        <p>Tel: <i class="fa fa-phone" style="font-size:24px"></i>+233558602996</p>
+                        <p>Fax: +233538260666</p>
+        
+                    </div>
+        
+                </div>
+            </div>
+            <p class="copyright">©2024 Bright C Web Developer. All Rights Reserved</p>
+          </footer>
+        
+    </section>
+
+
+
+    <script src="js/translator.js"></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script src="js/nav.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+
+    <script src="js/owlslider.js"></script>
+</body>
+</html>
