@@ -57,6 +57,7 @@
 .product_item_holder .proimage img{
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .product_name_div h1{
@@ -175,7 +176,7 @@
     .product_item_holder .proimage img{
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
     }
     .product_name_div h1{
         margin: 0px;
