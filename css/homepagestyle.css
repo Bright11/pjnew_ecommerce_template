@@ -40,7 +40,7 @@
 .product_item_holder{
     width: 250px;
     text-align: center;
-    height: 400px;
+    height: 370px;
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     padding: 8px;
