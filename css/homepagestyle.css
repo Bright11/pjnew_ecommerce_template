@@ -154,6 +154,7 @@
 @media (max-width: 900px){
     .product_section{
         width: 100%;
+        margin-top: 10px;
     }
     .product_item_holder{
         width: 140px;

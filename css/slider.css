@@ -56,3 +56,10 @@
     font-weight: var(--font-weight600);
     font-family: var(--font-family);
 }
+.slider_items{
+    height: 200px;
+}
+
+.slider_items a .proimage{
+    height: 200px !important;
+}
