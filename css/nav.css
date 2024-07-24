@@ -289,7 +289,7 @@ margin: 0px auto;
     display: block;
   }
 .topnavbar{
-  position: relative !important;
+  position: fixed;
 }
 .topnavbar  .ul_top_nav_link{
   position: absolute;
@@ -381,8 +381,8 @@ margin: 0px auto;
 }
 
 .spacer{
-  margin-top:10px;
-  height: 10px;
+  margin-top:100px;
+  height: 80px;
 }
 
 .hide_category_sidebar{
@@ -398,7 +398,7 @@ margin: 0px auto;
     display: block;
   }
 .topnavbar{
-  position: relative !important;
+  position: fixed;
 }
 .topnavbar  .ul_top_nav_link{
   position: absolute;
@@ -490,10 +490,12 @@ margin: 0px auto;
 left: 0 !important;
  
 }
+
 .spacer{
-  margin-top:10px;
-  height: 10px;
+  margin-top:100px;
+  height: 80px;
 }
+
 
 .hide_category_sidebar{
   display: block !important;
