@@ -24,8 +24,9 @@
     width: max-content;
     padding: 10px 20px;
     height: 400px;
-    overflow: hidden;
     width: 250px;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 
 .category_sidebar li{

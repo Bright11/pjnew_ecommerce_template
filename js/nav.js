@@ -41,7 +41,7 @@ function hidecategory(){
     }else{
         category_sidebar.classList.add('hide_category_sidebar');
         updatetext.innerHTML='<i class="fa fa-times" style="font-size:24px"></i>'
-        navcatgory_name.innerHTML="Show"
+        navcatgory_name.innerHTML="Close"
     }
     
 }
